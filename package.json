@@ -4,10 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "node dist/server.js",
-    "postinstall": "tsc && mv -i -v public/build dist/ && rm -v -rf src",
-    "watch-node": "nodemon dist/servers.js",
-    "watch-ts": "tsc -w",
+    "start": "node server.js",
     "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "keywords": [],
