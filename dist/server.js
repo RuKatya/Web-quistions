@@ -8,7 +8,8 @@ const path_1 = __importDefault(require("path"));
 const app = express_1.default(); //express
 const PORT = process.env.PORT || 8655;
 // app.use(express.static(path.join(__dirname, 'public', 'build')))
-app.use(express_1.default.static(path_1.default.join(__dirname, '..', 'public', 'build')));
+app.use('/', express_1.default.static(path_1.default.join(__dirname, 'public', 'build')));
+// app.use(express.static(path.join(__dirname, '..', 'public', 'build')));
 try {
     app.listen(PORT, () => {
         console.log(`Server listen on http://localhost:${PORT}`);
