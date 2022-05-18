@@ -6,8 +6,8 @@ const path = require('path')
 
 const PORT = process.env.PORT || 6565; //connect to port 6565
 
-app.use('/', express.static('public/build'))
-// app.use(express.static('public/build'));
+// app.use('/', express.static('public/build'))
+app.use(express.static('public/build'));
 // app.get('/', (req, res) => {
 //     try {
 //         res.send('we get it')
